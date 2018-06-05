@@ -1,4 +1,4 @@
-Teste Semantix - Fernando Wenzel Neumann - 01/06/2018
+Teste - Fernando  - 01/06/2018
 
 Qual o objetivo do comando cache em Spark?
 Seu objetivo é persistir o RDD em memória, como exemplo, dos dados obtidos com o instanciamento de um SparkContext ("sc") a partir de um arquivo. 
@@ -6,6 +6,7 @@ A leitura de um arquivo (val arquivo = sc.textFile("<...>")) não é executada i
 
 O mesmo código implementado em Spark é normalmente mais rápido que a implementação equivalente em MapReduce. Por quê?
 Porque Spark inovou com os dados sendo distribuídos em memória versus em disco, que é a solução MapReduce, podendo possibilitar vantagem de desempenho na casa das dezenas, chegado bem próximo ao tempo real.
+
 
 Qual é a função do SparkContext ?
 O SparkContext é o primeiro e primordial passo para se criar e levantar uma aplicação de Spark. Por convenção, ela é instanciada com o nome "sc".
@@ -39,9 +40,6 @@ A instância de RDD counts é criada a partir da outra (textFile), onde flatMap 
 A operação map mapeia cada elemento formado para o número 1, formando conseqüentemente elementos "chave-valor" com todas as chaves (isto é, neste caso,  elementos) presentes.
 A operação reduceByKey faz exatamente o que indica com seu nome: reduz por chave, ou seja, para cada chave encontrada (com repetições eliminadas), será seguida do número de vezes que se repetiu.
 A instância de RDD counts é gravada em formato de arquivo de texto no caminho Hadoop indicado.
-
-
-
 
 
 HTTP requests to the NASA Kennedy Space Center WWW server
